@@ -1,0 +1,424 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 12",
+            "price": 1200,
+            "category": "iPhone",
+            "imageUrl": "https://m.media-amazon.com/images/I/71hIfcIPyxS.jpg"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 12 Pro",
+            "price": 1400,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3nemX_-rdkOr30avrNh5YVQmMWr8bOP1FXw&s"
+        },
+        {
+            "id": 3,
+            "name": "iPhone 13",
+            "price": 1500,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKwOoLXo_qsQzWks18-cqFFiGQwVv2HuaD3cOAcHUnHtYaNPVGLURe2t9VRQBx-nfmK7w&usqp=CAU"
+        },
+        {
+            "id": 4,
+            "name": "iPhone 13 Pro",
+            "price": 1700,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYI-4u43A3acCYmLC33UtWCCXFWmUp82izQfLtIs2SNzfo43MLSwcr5e6SpMHcBz-ZnvA&usqp=CAU"
+        },
+        {
+            "id": 5,
+            "name": "iPhone 14",
+            "price": 1800,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmf8CW9H9Ap0KIE49EeFsj2uPowPe7UVKGBTc7W670Dofv24QF4IgLMvn-Et0w2f7aXCE&usqp=CAU"
+        },
+        {
+            "id": 6,
+            "name": "iPhone 14 Pro",
+            "price": 2000,
+            "category": "iPhone",
+            "imageUrl": "https://cdn.siamphone.com/spec/apple/images/_iphone_16_pro_max/1726045251_03-apple-iphone-16-pro-max.jpg"
+        },
+        {
+            "id": 7,
+            "name": "iPhone 15",
+            "price": 2100,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDspIC-LPMElvTKz7dGtIE4-tkdfknQsA8A&s"
+        },
+        {
+            "id": 8,
+            "name": "iPhone 15 Pro",
+            "price": 2300,
+            "category": "iPhone",
+            "imageUrl": "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/08/iPhone-16-Pro.jpeg?size=*:900"
+        },
+        {
+            "id": 9,
+            "name": "iPhone SE",
+            "price": 800,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqJywuH8S2QpwOy7Hf2CtZ_ibob5IDEKAbm1KZdLCTbZREFJoON5cRls0E1NEe2gpsxw&usqp=CAU"
+        },
+        {
+            "id": 10,
+            "name": "iPhone XR",
+            "price": 700,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqJywuH8S2QpwOy7Hf2CtZ_ibob5IDEKAbm1KZdLCTbZREFJoON5cRls0E1NEe2gpsxw&usqp=CAU"
+        },
+        {
+            "id": 11,
+            "name": "iPhone XS",
+            "price": 900,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi--9mE_ktAq1a_uKp-W0_FzOIBKNItWaO32E_SjTa1ZKCLZHsNfZxGLL4qFt6u_DJSPA&usqp=CAU"
+        },
+        {
+            "id": 12,
+            "name": "iPhone XS Max",
+            "price": 1100,
+            "category": "iPhone",
+            "imageUrl": "https://twigo.ru/center/iblock/3ca/wbkxhtp5fejwuxotjn9ly212dn4rpgd7/h586j6gr7jk7sz2ukigx4oen10ea3rsr.jpg"
+        },
+        {
+            "id": 13,
+            "name": "iPhone 11",
+            "price": 1000,
+            "category": "iPhone",
+            "imageUrl": "https://iplanet.one/cdn/shop/files/iPhone_16_Pro_Desert_Titanium_PDP_Image_Position_1__en-IN_38a0c11d-1864-457e-a2e2-7333c0480a7b.jpg?v=1727249764"
+        },
+        {
+            "id": 14,
+            "name": "iPhone 11 Pro",
+            "price": 1200,
+            "category": "iPhone",
+            "imageUrl": "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/08/iPhone-16-Pro.jpeg?size=*:900"
+        },
+        {
+            "id": 15,
+            "name": "iPhone 11 Pro Max",
+            "price": 1400,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgggCG9aWAcZZpMP94JtGzfcJhPDRq-aTKt3kdFKu4E9O1ECPRDBR2Yzq_w3NYaA2wjM&usqp=CAU"
+        },
+        {
+            "id": 16,
+            "name": "iPhone 12 Mini",
+            "price": 1000,
+            "category": "iPhone",
+            "imageUrl": "https://iplanet.one/cdn/shop/files/iPhone_16_Pro_Desert_Titanium_PDP_Image_Position_1__en-IN_38a0c11d-1864-457e-a2e2-7333c0480a7b.jpg?v=1727249764"
+        },
+        {
+            "id": 17,
+            "name": "iPhone 13 Mini",
+            "price": 1100,
+            "category": "iPhone",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_g5X6KqxZqhk5Zk05a2oJ6SzWfCXl36npjNbKBkdgWzOFkvCGvvkGixE6cItnQ8SP8hE&usqp=CAU"
+        },
+        {
+            "id": 18,
+            "name": "iPhone 14 Plus",
+            "price": 1900,
+            "category": "iPhone",
+            "imageUrl": "https://mobilebuzzbd.com/wp-content/uploads/2024/09/iPhone-16-Pro-Natural-Titanium.jpg"
+        },
+        {
+            "id": 19,
+            "name": "iPhone 15 Plus",
+            "price": 2200,
+            "category": "iPhone",
+            "imageUrl": "https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2024/08/iPhone-16-Pro.jpeg?size=*:900"
+        },
+        {
+            "id": 20,
+            "name": "iPhone Classic",
+            "price": 500,
+            "category": "iPhone",
+            "imageUrl": "https://cdn.siamphone.com/spec/apple/images/_iphone_16_pro_max/1726045251_03-apple-iphone-16-pro-max.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Samsung Galaxy S21",
+            "price": 1000,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT52lZdHjlX3Luu1rB94aoOlopFn5dKnEyLA&s"
+        },
+        {
+            "id": 22,
+            "name": "Samsung Galaxy S21 Ultra",
+            "price": 1200,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdLrKg0j4SzQ8vYfY2d0vNjFF_rsV3XDAj4Pnc6Kfmkimr1TYmAteQZMJYGGqlFDV_KA&usqp=CAU"
+        },
+        {
+            "id": 23,
+            "name": "Samsung Galaxy S22",
+            "price": 1300,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcGVb9Sy038NRWRrYe3CNjepkSiOSSsnlSoottGWzmFJgmNdl0pj5UtA9x4Ymg6k0Lcw&usqp=CAU"
+        },
+        {
+            "id": 24,
+            "name": "Samsung Galaxy S22 Ultra",
+            "price": 1500,
+            "category": "Samsung",
+            "imageUrl": "https://cdn.dsmcdn.com/ty1117/product/media/images/prod/PIM/20240103/07/a8654c9c-cb6b-4ff3-8c61-96d01a640e77/1_org_zoom.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Samsung Galaxy S23",
+            "price": 1600,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT52lZdHjlX3Luu1rB94aoOlopFn5dKnEyLA&s"
+        },
+        {
+            "id": 26,
+            "name": "Samsung Galaxy S23 Ultra",
+            "price": 1800,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvhk5YJgclGEkoxXWeFMZwCYf2BcHitr_aFK0lhTsRm7G6_O8FsXOntRSM683yiW_4wc&usqp=CAU"
+        },
+        {
+            "id": 27,
+            "name": "Samsung Note 20",
+            "price": 900,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdLrKg0j4SzQ8vYfY2d0vNjFF_rsV3XDAj4Pnc6Kfmkimr1TYmAteQZMJYGGqlFDV_KA&usqp=CAU"
+        },
+        {
+            "id": 28,
+            "name": "Samsung Note 20 Ultra",
+            "price": 1100,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvhk5YJgclGEkoxXWeFMZwCYf2BcHitr_aFK0lhTsRm7G6_O8FsXOntRSM683yiW_4wc&usqp=CAU"
+        },
+        {
+            "id": 29,
+            "name": "Samsung Galaxy A52",
+            "price": 500,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzU6kF9EYYiDjCmpvRk6fqaslan-wcD-M7hUgwhxiq_mzvBfBxIMNo8RxHOrgpAq9sKc&usqp=CAU"
+        },
+        {
+            "id": 30,
+            "name": "Samsung Galaxy A72",
+            "price": 600,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT52lZdHjlX3Luu1rB94aoOlopFn5dKnEyLA&s"
+        },
+        {
+            "id": 31,
+            "name": "Samsung Galaxy M31",
+            "price": 400,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcGVb9Sy038NRWRrYe3CNjepkSiOSSsnlSoottGWzmFJgmNdl0pj5UtA9x4Ymg6k0Lcw&usqp=CAU"
+        },
+        {
+            "id": 32,
+            "name": "Samsung Galaxy M51",
+            "price": 450,
+            "category": "Samsung",
+            "imageUrl": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_135896459?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402"
+        },
+        {
+            "id": 33,
+            "name": "Samsung Galaxy Z Flip 3",
+            "price": 1300,
+            "category": "Samsung",
+            "imageUrl": "https://cdn.dsmcdn.com/ty1117/product/media/images/prod/PIM/20240103/07/a8654c9c-cb6b-4ff3-8c61-96d01a640e77/1_org_zoom.jpg"
+        },
+        {
+            "id": 34,
+            "name": "Samsung Galaxy Z Flip 4",
+            "price": 1500,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcGVb9Sy038NRWRrYe3CNjepkSiOSSsnlSoottGWzmFJgmNdl0pj5UtA9x4Ymg6k0Lcw&usqp=CAU"
+        },
+        {
+            "id": 35,
+            "name": "Samsung Galaxy Z Fold 3",
+            "price": 2000,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzU6kF9EYYiDjCmpvRk6fqaslan-wcD-M7hUgwhxiq_mzvBfBxIMNo8RxHOrgpAq9sKc&usqp=CAU"
+        },
+        {
+            "id": 36,
+            "name": "Samsung Galaxy Z Fold 4",
+            "price": 2200,
+            "category": "Samsung",
+            "imageUrl": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_135896459?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402"
+        },
+        {
+            "id": 37,
+            "name": "Samsung Galaxy A32",
+            "price": 350,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9580PjSxyVvk-Oj3Qny2t3ViLHEXYR7ln55PRmP_NX3SESrqZbwjU9ce-LsBRvglDEWY&usqp=CAU"
+        },
+        {
+            "id": 38,
+            "name": "Samsung Galaxy A33",
+            "price": 370,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvhk5YJgclGEkoxXWeFMZwCYf2BcHitr_aFK0lhTsRm7G6_O8FsXOntRSM683yiW_4wc&usqp=CAU"
+        },
+        {
+            "id": 39,
+            "name": "Samsung Galaxy A53",
+            "price": 480,
+            "category": "Samsung",
+            "imageUrl": "https://cdn.dsmcdn.com/ty1117/product/media/images/prod/PIM/20240103/07/a8654c9c-cb6b-4ff3-8c61-96d01a640e77/1_org_zoom.jpg"
+        },
+        {
+            "id": 40,
+            "name": "Samsung Galaxy A73",
+            "price": 650,
+            "category": "Samsung",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzU6kF9EYYiDjCmpvRk6fqaslan-wcD-M7hUgwhxiq_mzvBfBxIMNo8RxHOrgpAq9sKc&usqp=CAU"
+        },
+        {
+            "id": 41,
+            "name": "Redmi Note 8",
+            "price": 250,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdLa9P1oFS2mWB2RzDCC4TJfiUiu251cLBfw&s"
+        },
+        {
+            "id": 42,
+            "name": "Redmi Note 9",
+            "price": 300,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIUaJQWDD9dH9xzKW9JkPTAuckGi6IUnwwMolhVs4-kTedT_QXftDeTEHEy0AIbXWYbc&usqp=CAU"
+        },
+        {
+            "id": 43,
+            "name": "Redmi Note 10",
+            "price": 350,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhmnH7X9oiQY43rp8XI9nUDi89MB6DRyumxyGwEfu68tZXkoFUheUfhERDZUlGJG3hPbQ&usqp=CAU"
+        },
+        {
+            "id": 44,
+            "name": "Redmi Note 10 Pro",
+            "price": 400,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDKBOp8M0ZgIQMWoe2lqVo342WifXoDOPR9LyuJZhkN1RQkY6klN38hTQciFgUKMLqZA&usqp=CAU"
+        },
+        {
+            "id": 45,
+            "name": "Redmi Note 11",
+            "price": 450,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG9bJsP0ObvgXCvUg9pY7nL56YcHa8gWkRNbEyExbVuAyzCDfv-DOZ8EWQDEXE37y0bBM&usqp=CAU"
+        },
+        {
+            "id": 46,
+            "name": "Redmi Note 11 Pro",
+            "price": 500,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEzr6JvCgI1iKT0Y7OqzkcZzWh-L0E1jOSQXplfy4uzAnMvlt8-Qf3B6Q0AFcTam_eFk&usqp=CAU"
+        },
+        {
+            "id": 47,
+            "name": "Redmi Note 12",
+            "price": 550,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBXbtbmuAJzPnqx_vuERkBllz8Xrfeje5S7ehWGeUq3icU3GOvWaz7a6BfkB8fI88HT0&usqp=CAU"
+        },
+        {
+            "id": 48,
+            "name": "Redmi Note 12 Pro",
+            "price": 600,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdLa9P1oFS2mWB2RzDCC4TJfiUiu251cLBfw&s"
+        },
+        {
+            "id": 49,
+            "name": "Redmi Note 13",
+            "price": 650,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIcBQCm7cGC1ByJNXV7VmLzsXhVjlgEA8wUwSkQWUEkbgsR5nbtHAYkDW468Tk9kwEos&usqp=CAU"
+        },
+        {
+            "id": 50,
+            "name": "Redmi Note 13 Pro",
+            "price": 700,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZmM44MrgUNK3lzriTeAPmfYSVpvW3W4bb8Or_rOnLN1qID9B-NGmD18asSKG8R_2bp7g&usqp=CAU"
+        },
+        {
+            "id": 51,
+            "name": "Redmi Note 7",
+            "price": 200,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDKBOp8M0ZgIQMWoe2lqVo342WifXoDOPR9LyuJZhkN1RQkY6klN38hTQciFgUKMLqZA&usqp=CAU"
+        },
+        {
+            "id": 52,
+            "name": "Redmi Note 6 Pro",
+            "price": 220,
+            "category": "Redmi",
+            "imageUrl": "https://www.bakuelectronics.az/assets/images/products/132000/smartfon-xiaomi-redmi-note-12-pro-8gb256gb-graphite-gray-8.jpg"
+        },
+        {
+            "id": 53,
+            "name": "Redmi Note 5",
+            "price": 180,
+            "category": "Redmi",
+            "imageUrl": "https://yellow.ua/media/catalog/product/cache/9/image/600x600/9df78eab33525d08d6e5fb8d27136e95/s/m/smartfon-xiaomi-redmi-note-10-pro-8-256gb-aurora-green-global-redmi-note-10-pro-8-256gb-aurora-green-photo5-1024x768.jpg"
+        },
+        {
+            "id": 54,
+            "name": "Redmi Note 4",
+            "price": 160,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFszLslN4rxhavZG47WGlbhXL19zjfVEUukLAgx5Rvvo29Qc9VqmY8KyoCvac_T8Ymn9I&usqp=CAU"
+        },
+        {
+            "id": 55,
+            "name": "Redmi Note 3",
+            "price": 140,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdLa9P1oFS2mWB2RzDCC4TJfiUiu251cLBfw&s"
+        },
+        {
+            "id": 56,
+            "name": "Redmi Note 2",
+            "price": 120,
+            "category": "Redmi",
+            "imageUrl": "https://www.bakuelectronics.az/assets/images/products/132000/smartfon-xiaomi-redmi-note-12-pro-8gb256gb-graphite-gray-8.jpg"
+        },
+        {
+            "id": 57,
+            "name": "Redmi 10",
+            "price": 200,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZmM44MrgUNK3lzriTeAPmfYSVpvW3W4bb8Or_rOnLN1qID9B-NGmD18asSKG8R_2bp7g&usqp=CAU"
+        },
+        {
+            "id": 58,
+            "name": "Redmi 9",
+            "price": 180,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGx2Q0E71nCWivNqfjRe1CIqTzpfUtcBzMt9E0UvHSUNmmcv5MPVMXQHfp342kqAc0eNw&usqp=CAU"
+        },
+        {
+            "id": 59,
+            "name": "Redmi 8",
+            "price": 150,
+            "category": "Redmi",
+            "imageUrl": "https://cdn.dsmcdn.com/mnresize/220/320/ty1264/product/media/images/prod/SPM/PIM/20240418/19/1a116cf7-eee6-3584-a9af-c18cb76a70a8/1_org_zoom.jpg"
+        },
+        {
+            "id": 60,
+            "name": "Redmi 7",
+            "price": 130,
+            "category": "Redmi",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFszLslN4rxhavZG47WGlbhXL19zjfVEUukLAgx5Rvvo29Qc9VqmY8KyoCvac_T8Ymn9I&usqp=CAU"
+        }
+    ]
+}
