@@ -1,0 +1,55 @@
+import { useContext } from "react"
+import { useNavigate } from "react-router-dom"
+import { CartContext } from "../contextApi/CartContext"
+import { IoReturnUpBackSharp } from "react-icons/io5";
+
+const ProductCart = () => {
+  const navigate = useNavigate()
+  const cartCtx = useContext(CartContext)
+  if (!cartCtx) return null;
+  const { getLocal, removeFromCart, totalPrice } = cartCtx
+  console.log(getLocal);
+
+
+  const handleClick = () => {
+    navigate("/")
+  }
+
+  return (
+    <div>
+      <div className="cursor-pointer text-red-500 ml-7 mt-2" onClick={handleClick}>
+        <IoReturnUpBackSharp /> Back
+      </div>
+      <div className="p-6 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
+        <div className="flex flex-col gap-4">
+          {getLocal?.map((item) => (
+            <div
+              key={item.id}
+              className="flex justify-between items-center bg-white shadow-md rounded-lg p-4"
+            >
+              <div className="flex items-center gap-4">
+                <img src={item.imageUrl} alt={item.name} className="w-20 h-20 rounded" />
+                <div>
+                  <h3 className="font-semibold">{item.name}</h3>
+                  <p className="text-gray-600">{item.price} ₼</p>
+                </div>
+              </div>
+              <button
+                onClick={() => removeFromCart(item.id)}
+                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className="text-right mt-4 text-xl font-semibold">
+          Total:${totalPrice}  ₼
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ProductCart
