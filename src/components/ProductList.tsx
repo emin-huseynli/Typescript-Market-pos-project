@@ -12,7 +12,7 @@ const ProductList = () => {
 
     return (
         <div className="p-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+            <div className="flex flex-wrap justify-center gap-6 p-6">
                 {filteredProducts && filteredProducts.length > 0 ? (
 
                     filteredProducts.map((product: Product) => (
@@ -22,7 +22,7 @@ const ProductList = () => {
                         >
                             <div className="w-full h-48 overflow-hidden">
                                 <img
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-60 object-cover"
                                     src={product.imageUrl}
                                     alt={product.name}
                                 />

@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
     const navigate = useNavigate()
 
-    const context = useContext(CartContext)
-    if (!context) return null
-    const { setSearch } = context
+    const cartCtx = useContext(CartContext)
+    if (!cartCtx) return null
+    const { setSearch, totalItems } = cartCtx
 
     const handleNavigate = () => {
         navigate('/cart')
@@ -22,8 +22,13 @@ const Navbar = () => {
                 placeholder="search for phone..."
                 className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 bg-amber-50 focus:ring-green-500"
                 type="text" />
-                <div onClick={handleNavigate}>
-                    <FaBasketShopping className="size-10 text-green-200" />
+                <div className="relative cursor-pointer" onClick={handleNavigate}>
+                    <FaBasketShopping className="text-2xl text-white" />
+                    {totalItems > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                            {totalItems}
+                        </span>
+                    )}
                 </div>
             </div>
         </div>

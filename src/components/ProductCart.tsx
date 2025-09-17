@@ -7,7 +7,7 @@ const ProductCart = () => {
   const navigate = useNavigate()
   const cartCtx = useContext(CartContext)
   if (!cartCtx) return null;
-  const { getLocal, removeFromCart, totalPrice } = cartCtx
+  const { getLocal, removeFromCart, totalPrice, handleincrease, handleDecrease, clearCart } = cartCtx
   console.log(getLocal);
 
 
@@ -21,7 +21,7 @@ const ProductCart = () => {
         <IoReturnUpBackSharp /> Back
       </div>
       <div className="p-6 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Your Cart</h2>
+        <h2 className="text-2xl font-bold mb-4">Products in your cart</h2>
         <div className="flex flex-col gap-4">
           {getLocal?.map((item) => (
             <div
@@ -29,10 +29,19 @@ const ProductCart = () => {
               className="flex justify-between items-center bg-white shadow-md rounded-lg p-4"
             >
               <div className="flex items-center gap-4">
-                <img src={item.imageUrl} alt={item.name} className="w-20 h-20 rounded" />
+                <img src={item.imageUrl} alt={item.name} className="w-20 h-20 rounded object-cover" />
                 <div>
                   <h3 className="font-semibold">{item.name}</h3>
                   <p className="text-gray-600">{item.price} ₼</p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <button onClick={() => handleDecrease(item.id)} className="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold hover:bg-red-600 transition">
+                      -
+                    </button>
+                    <span className="px-3 py-1 border rounded bg-gray-100 text-gray-700">{item?.quantity}</span>
+                    <button onClick={() => handleincrease(item.id)} className="w-8 h-8 flex items-center justify-center rounded-full bg-green-500 text-white text-lg font-bold hover:bg-green-600 transition">
+                      +
+                    </button>
+                  </div>
                 </div>
               </div>
               <button
@@ -44,9 +53,18 @@ const ProductCart = () => {
             </div>
           ))}
         </div>
-        <div className="text-right mt-4 text-xl font-semibold">
-          Total:${totalPrice}  ₼
+        {getLocal.length > 0 ? (<div><div>
+          <button onClick={clearCart} className="bg-red-500 text-white mt-6 px-4 py-2 rounded hover:bg-red-600 transition">Clear Cart</button>
         </div>
+          <div className="text-right text-xl font-semibold">
+            Total:${totalPrice}  ₼
+          </div>
+        </div>) :
+          <div className="text-right mt-4 text-xl font-semibold">
+            Total:${totalPrice}  ₼
+          </div>
+        }
+
       </div>
     </div>
   )
