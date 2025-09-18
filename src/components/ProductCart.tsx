@@ -8,12 +8,14 @@ const ProductCart = () => {
   const cartCtx = useContext(CartContext)
   if (!cartCtx) return null;
   const { getLocal, removeFromCart, totalPrice, handleincrease, handleDecrease, clearCart } = cartCtx
-  console.log(getLocal);
-
 
   const handleClick = () => {
     navigate("/")
   }
+  const handleCheckout = () => {
+    navigate("/checkout")
+  }
+
 
   return (
     <div>
@@ -34,11 +36,11 @@ const ProductCart = () => {
                   <h3 className="font-semibold">{item.name}</h3>
                   <p className="text-gray-600">{item.price} ₼</p>
                   <div className="flex items-center gap-2 mt-2">
-                    <button onClick={() => handleDecrease(item.id)} className="w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold hover:bg-red-600 transition">
+                    <button onClick={() => handleDecrease(item.id)} className="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full bg-red-500 text-white text-lg font-bold hover:bg-red-600 transition">
                       -
                     </button>
                     <span className="px-3 py-1 border rounded bg-gray-100 text-gray-700">{item?.quantity}</span>
-                    <button onClick={() => handleincrease(item.id)} className="w-8 h-8 flex items-center justify-center rounded-full bg-green-500 text-white text-lg font-bold hover:bg-green-600 transition">
+                    <button onClick={() => handleincrease(item.id)} className="cursor-pointer w-8 h-8 flex items-center justify-center rounded-full bg-green-500 text-white text-lg font-bold hover:bg-green-600 transition">
                       +
                     </button>
                   </div>
@@ -46,7 +48,7 @@ const ProductCart = () => {
               </div>
               <button
                 onClick={() => removeFromCart(item.id)}
-                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition cursor-pointer"
               >
                 Remove
               </button>
@@ -54,16 +56,19 @@ const ProductCart = () => {
           ))}
         </div>
         {getLocal.length > 0 ? (<div><div>
-          <button onClick={clearCart} className="bg-red-500 text-white mt-6 px-4 py-2 rounded hover:bg-red-600 transition">Clear Cart</button>
+          <button onClick={clearCart} className="bg-red-500 text-white mt-6 px-4 py-2 rounded hover:bg-red-600 transition cursor-pointer">Clear Cart</button>
         </div>
           <div className="text-right text-xl font-semibold">
             Total:${totalPrice}  ₼
+            <div><button onClick={handleCheckout} className="bg-green-500 text-white mt-6 px-4 py-2 rounded hover:bg-green-600 transition cursor-pointer">Order</button></div>
           </div>
         </div>) :
           <div className="text-right mt-4 text-xl font-semibold">
             Total:${totalPrice}  ₼
+            <div><button onClick={handleCheckout} className="bg-green-500 text-white mt-6 px-4 py-2 rounded hover:bg-green-600 transition cursor-pointer">Order</button></div>
           </div>
         }
+
 
       </div>
     </div>

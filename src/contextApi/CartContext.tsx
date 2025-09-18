@@ -1,6 +1,8 @@
 import React, { createContext, useState, useEffect, type ReactNode } from "react";
 import type { CartItem, Product } from "../types/product";
 import axios from "axios"
+import { toast } from "react-toastify";
+import type { Transaction } from "../types/transaction";
 
 interface CartContextType {
   products: Product[];
@@ -14,6 +16,10 @@ interface CartContextType {
   totalItems: number;
   handleincrease: (id: string) => void;
   handleDecrease: (id: string) => void;
+  clearCart: () => void;
+  selectedCategory: string;
+  setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
+  checkout:()=>void
 }
 
 const BASE_URL = import.meta.env.VITE_API_URL
@@ -24,6 +30,7 @@ export const CartContext = createContext<CartContextType | null>(null);
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [search, setSearch] = useState<string>("")
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [getLocal, setGetLocal] = useState<CartItem[]>(() =>
     JSON.parse(localStorage.getItem("cart") || "[]") as CartItem[]
   );
@@ -41,9 +48,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     getProducts();
   }, []);
 
-  const filteredProducts = products.filter((pro) => {
-    return pro.name.toLowerCase().includes(search.toLowerCase())
-  })
 
 
   const addToCart = (product: Product) => {
@@ -52,8 +56,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
     if (itemIndex !== -1) {
       cartFromLocal[itemIndex].quantity += 1;
+      toast.error("Already added to cart")
     } else {
       cartFromLocal.push({ ...product, quantity: 1 });
+      toast.success("Added to cart")
     }
 
     setGetLocal(cartFromLocal);
@@ -65,6 +71,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     const updatedCart = cartFromLocat.filter((i) => i.id !== id)
     setGetLocal(updatedCart)
     localStorage.setItem("cart", JSON.stringify(updatedCart))
+    toast.info("Removed from cart")
 
   };
 
@@ -96,7 +103,35 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const clearCart = () => {
     setGetLocal([])
     localStorage.clear()
+    toast.info("Cart is empty.")
   }
+
+
+  const filteredProducts = products.filter((pro) => {
+    const matchesSearch = pro.name.toLowerCase().includes(search.toLowerCase());
+    const matchesCategory = selectedCategory === "All" || pro.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
+
+  const checkout = () => {
+    if (getLocal.length === 0) return;
+
+    const newTransaction: Transaction = {
+      id: Date.now().toString(),
+      items: getLocal,
+      total: totalPrice,
+      date: new Date().toISOString()
+    };
+
+    const transactions: Transaction[] = JSON.parse(localStorage.getItem("transactions") || "[]");
+    transactions.push(newTransaction);
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+
+    clearCart();
+   toast.success("Checkout completed successfully!")
+  };
+
+
 
   return (
     <CartContext.Provider value={{
@@ -111,7 +146,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       handleincrease,
       handleDecrease,
       totalItems,
-      clearCart
+      clearCart,
+      selectedCategory,
+      setSelectedCategory,
+      checkout
     }}>
       {children}
     </CartContext.Provider>
